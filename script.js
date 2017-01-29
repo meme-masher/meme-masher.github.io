@@ -42,8 +42,10 @@ function textLoad() {
     game = JSON.parse(prompt("Paste your saved game here:"));
 }
 
+saveGame();
+
 setInterval(function() {
-    if (localStorage.getItem("gameData") !== JSON.stringify(wipe) && JSON.parse(localStorage.getItem) !== "[Object object]") {
+    if (localStorage.getItem("gameData") !== JSON.stringify(wipe)) {
         document.getElementById("save").innerHTML = localStorage.getItem("gameData");
     } else {
         document.getElementById("save").innerHTML = "no saves";
