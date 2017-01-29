@@ -33,6 +33,7 @@ button:focus {
 #noButton {
     border: none;
     background: none;
+    transition: 0.3s;
 }
 #noButton:active {
     box-shadow: 0 0 5px;
