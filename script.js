@@ -13,7 +13,7 @@ function saveGame() {
     if (typeof(Storage) !== "undefined") {
         localStorage.setItem("gameData",JSON.stringify(game));
     } else {
-        alert("Your browser does not support local storage. Please wait until the next update for text-based saving.");
+        alert("Your browser does not support local storage. Please use text-based saving.");
     }
 }
 
@@ -21,7 +21,7 @@ function loadGame() {
     if (typeof(Storage) !== "undefined") {
         game = JSON.parse(localStorage.getItem("gameData"));
     } else {
-        alert("Your browser does not support local storage. Please wait until the next update for text-based loading.");
+        alert("Your browser does not support local storage. Please use text-based loading.");
     }
 }
 
@@ -30,7 +30,7 @@ function trueWipe() {
     if (typeof(Storage) !== "undefined") {
         localStorage.setItem("gameData",JSON.stringify(wipe));
     } else {
-        alert("Your browser does not support local storage. Please wait until the next update for text-based saving.");
+        alert("Your browser does not support local storage. Please use text-based saving.");
     }
 }
 
