@@ -1,0 +1,42 @@
+body {
+    font-family: monospace;
+    cursor: default;
+}
+a {
+    color: blue;
+}
+button {
+    margin: 2px;
+    font-family: monospace;
+}
+button:nth-of-type(2), button:nth-of-type(3), button:nth-of-type(4), button:nth-of-type(5) {
+    margin: 2px -7px 2px 2px;
+}
+button:focus {
+    outline: none;
+}
+.inline {
+    display: inline;
+    margin: 20px;
+}
+#computerScreen {
+    border: 1px solid black;
+    display: inline-block;
+}
+#counterHolder {
+    text-align: center;
+    width: 20px;
+}
+#counter {
+    font-size: 30px;
+}
+#noButton {
+    border: none;
+    background: none;
+}
+#save {
+    text-align: center;
+}
+#footer {
+    background-color: #f0f0f0;
+}
