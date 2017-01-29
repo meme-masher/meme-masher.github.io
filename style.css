@@ -34,6 +34,9 @@ button:focus {
     border: none;
     background: none;
 }
+#noButton:active {
+    box-shadow: 0 0 5px;
+}
 #save {
     text-align: center;
 }
