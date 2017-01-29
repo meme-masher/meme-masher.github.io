@@ -43,7 +43,7 @@ function textLoad() {
 }
 
 setInterval(function() {
-    if (localStorage.getItem("gameData") !== JSON.stringify(wipe) || localStorage.getItem("gameData") === "undefined") {
+    if (localStorage.getItem("gameData") !== JSON.stringify(wipe) || localStorage.getItem("gameData") === undefined) {
         document.getElementById("save").innerHTML = localStorage.getItem("gameData");
     } else {
         document.getElementById("save").innerHTML = "no saves";
