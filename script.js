@@ -26,8 +26,7 @@ function loadGame() {
 }
 
 function trueWipe() {
-    wipeGame();
-    if (typeof(Storage) !== "undefined") {
+   if (typeof(Storage) !== "undefined") {
         localStorage.setItem("gameData",JSON.stringify(wipe));
     } else {
         alert("Your browser does not support local storage. Please use text-based saving.");
